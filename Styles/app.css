@@ -98,6 +98,48 @@ body {
   background-color: var(--bg);
 }
 
+/* 
+---------------------
+Navbar CSS 
+---------------------
+*/
+
+/* Navbar on lightMode*/
+.navbar {
+  color: #000000;
+  background-color: #fff;
+  z-index: 2;
+  box-shadow: 0 2px 2px rgb(230, 230, 230);
+}
+
+/* Navbar on darkMode */
+html[light-mode="dark"] .dark-theme {
+  background-color: #2b2a2A;
+  transition: background-color .3s;
+  box-shadow: 0 0 0;
+}
+
+/* Navbar Title for light mode*/
+.navbar-brand {
+  font-family: Agustina;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.navbar-brand:hover {
+  color: #000000 !important;
+}
+
+/* Navbar Title for dark mode */
+html[light-mode="dark"] .navbar-brand {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+html[light-mode="dark"] .navbar-brand:hover {
+  color: #ffffff !important;
+}
+
+
 
 /* 
 ---------------------
