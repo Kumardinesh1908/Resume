@@ -1,7 +1,7 @@
 <!-- Education -->
 <!-- <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 
-                            <dotlottie-player src="https://lottie.host/71414e48-e1f1-4fb2-bc8f-bc615daeb9ca/ZXZlrriU3r.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player> -->
+                            <dotlottie-player src="https://lottie.host/71414e48-e1f1-4fb2-bc8f-bc615daeb9ca/ZXZlrriU3r.json" background="transparent" speed="1" style="width: 500px; height: 500px;" loop autoplay></dotlottie-player> -->
 
 <!-- Projects -->
 <!-- <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
@@ -9,7 +9,7 @@
 
                             <dotlottie-player
                                 src="https://lottie.host/58835c14-f8f9-4295-93ae-22432b51a28f/g3qDjwm6so.json"
-                                background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+                                background="transparent" speed="1" style="width: 500px; height: 500px;" loop
                                 autoplay></dotlottie-player> -->
 
 <!-- Skills -->
@@ -24,7 +24,7 @@
 
                             <dotlottie-player
                                 src="https://lottie.host/6cab3b5e-6e48-4b76-a5cc-0e5b7ae51d41/ZhClO6GgFm.json"
-                                background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+                                background="transparent" speed="1" style="width: 500px; height: 500px;" loop
                                 autoplay></dotlottie-player> -->
 
 <!-- Extra -->
@@ -33,5 +33,5 @@
 
                             <dotlottie-player
                                 src="https://lottie.host/313f1b78-ec8b-42ae-9b7e-350dd8eeade1/ew0eGaV2If.json"
-                                background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+                                background="transparent" speed="1" style="width: 500px; height: 500px;" loop
                                 autoplay></dotlottie-player> -->
