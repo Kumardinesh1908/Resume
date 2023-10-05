@@ -28,8 +28,8 @@ let header = $(`<nav class="navbar navbar-expand-lg fixed-top dark-theme" id="na
 
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto" id="navbar-content">
-                        <li class="nav-item nav-item-hover"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item nav-item-hover"><a class="nav-link" href="experience.html">Experience</a></li>
+                        <li class="nav-item active nav-item-hover"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item active nav-item-hover"><a class="nav-link" href="experience.html">Experience</a></li>
                         <li class="nav-item nav-item-hover"><a class="nav-link" href="projects.html">Projects</a></li>
                         <li class="nav-item nav-item-hover"><a class="nav-link" href="research.html">Research</a></li>
                         <li class="nav-item nav-item-hover"><a class="nav-link" href="education.html">Education</a></li>
@@ -224,6 +224,16 @@ const scrollToTop = () => {
     });
 };
 
+//function for the "Scroll To Top" button to detect the footer
+$(window).scroll(function () {
+    //The button will be hidden until we scroll more than the window's height
+    if ($(window).scrollTop() < $(window).height()) {
+        $("#btnScrollToTop").css("visibility", "hidden");
+    } else {
+        $("#btnScrollToTop").css("visibility", "visible");
+    }
+});
+
 // function to toggle the light Theme
 const htmlElement = document.documentElement;
 function toggle_light_mode() {
@@ -238,9 +248,18 @@ function toggle_light_mode() {
 // function for toggling hamburger(X-button) is-active class
 $(function () {
     $("#js-hamburger").on("click", function () {
-      $(this).toggleClass("is-active");
+        $(this).toggleClass("is-active");
     });
-  });
+});
+
+// function to fetch the location href and update the current nav link design
+$(function () {
+    $("a.nav-link").each(function () {
+        if ($(this).prop("href") == window.location.href) {
+            $(this).addClass("current-link");
+        }
+    });
+});
 
 // function to set the lightMode in localStorage
 window.addEventListener("storage", function () {
