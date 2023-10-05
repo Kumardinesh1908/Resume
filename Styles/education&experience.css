@@ -46,7 +46,7 @@ h1 {
 }
 
 section {
-    padding-top: 100px;
+    padding-top: 70px;
 }
 
 .education_head {
@@ -61,6 +61,7 @@ section {
 
 .s2 {
     overflow-x: hidden;
+    padding-top: 10px;
 }
 
 .s2 .head {
