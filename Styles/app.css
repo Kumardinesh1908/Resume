@@ -424,3 +424,30 @@ html[light-mode="dark"] .socialicon {
       opacity: 1;
   }
 }
+
+/* GITHUB MICROANIMATION */
+html[light-mode="dark"] .github-icon {
+  fill: #ffff;
+}
+
+.github-icon {
+  width: 40px;
+  margin: auto;
+  fill: #000000;
+}
+
+.github:hover #arm {
+  transform-origin: bottom right;
+  animation: moveArm 1s infinite alternate;
+}
+
+@keyframes moveArm {
+  0% {
+      transform: rotate(10deg);
+  }
+
+  100% {
+      transform: rotate(-10deg);
+  }
+}
+
