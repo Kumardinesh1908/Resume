@@ -235,6 +235,12 @@ function toggle_light_mode() {
     }
 }
 
+// function for toggling hamburger(X-button) is-active class
+$(function () {
+    $("#js-hamburger").on("click", function () {
+      $(this).toggleClass("is-active");
+    });
+  });
 
 // function to set the lightMode in localStorage
 window.addEventListener("storage", function () {
