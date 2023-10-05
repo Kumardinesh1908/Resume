@@ -234,6 +234,14 @@ $(window).scroll(function () {
     }
 });
 
+// function to set the lightMode in localStorage
+window.addEventListener("storage", function () {
+    if (localStorage.lightMode == "light") {
+      app.setAttribute("light-mode", "light");
+    } else {
+      app.setAttribute("light-mode", "dark");
+    }
+  });
 
 // Contact-Form.js
 $(document).ready(function() {
