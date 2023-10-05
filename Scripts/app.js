@@ -182,7 +182,6 @@ $(function () {
     $("#btnScrollToTop").css("visibility", "hidden");
 });
 
-
 //function to scroll to top
 const scrollToTop = () => {
     window.scrollTo({
@@ -191,3 +190,14 @@ const scrollToTop = () => {
         behavior: "smooth",
     });
 };
+
+//function for the "Scroll To Top" button to detect the footer
+$(window).scroll(function () {
+    //The button will be hidden until we scroll more than the window's height
+    if ($(window).scrollTop() < $(window).height()) {
+      $("#btnScrollToTop").css("visibility", "hidden");
+    } else {
+      $("#btnScrollToTop").css("visibility", "visible");
+    }
+  });
+  
