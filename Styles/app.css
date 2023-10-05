@@ -319,7 +319,7 @@ html[light-mode="dark"] .socialicon {
 
 @keyframes flap {
   50% {
-      transform: scaleX(-1) rotate(-45deg) translate(-40px, -40px);
+    transform: scaleX(-1) rotate(-45deg) translate(-40px, -40px);
   }
 }
 
@@ -336,13 +336,13 @@ html[light-mode="dark"] .socialicon {
 
 @keyframes rect-up {
   50% {
-      y: 10px;
-      height: 11px;
+    y: 10px;
+    height: 11px;
   }
 
   0% {
-      y: 13px;
-      height: 8px;
+    y: 13px;
+    height: 8px;
   }
 
 }
@@ -353,15 +353,15 @@ html[light-mode="dark"] .socialicon {
 
 @keyframes bounce {
   75% {
-      cy: 8px;
+    cy: 8px;
   }
 
   50% {
-      cy: 4px
+    cy: 4px
   }
 
   0% {
-      cy: 4px
+    cy: 4px
   }
 
 }
@@ -402,14 +402,14 @@ html[light-mode="dark"] .socialicon {
 
   0%,
   50% {
-      stroke-dashoffset: 150;
+    stroke-dashoffset: 150;
 
   }
 
   75% {
-      fill: #EF4649;
-      stroke-dashoffset: 0;
-      stroke-width: 11;
+    fill: #EF4649;
+    stroke-dashoffset: 0;
+    stroke-width: 11;
   }
 }
 
@@ -417,11 +417,11 @@ html[light-mode="dark"] .socialicon {
 
   0%,
   75% {
-      opacity: 0;
+    opacity: 0;
   }
 
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -443,58 +443,62 @@ html[light-mode="dark"] .github-icon {
 
 @keyframes moveArm {
   0% {
-      transform: rotate(10deg);
+    transform: rotate(10deg);
   }
 
   100% {
-      transform: rotate(-10deg);
+    transform: rotate(-10deg);
   }
 }
 
-  /*
+/*
   -----------------------
    SCROLL TO TOP BUTTON 
   -----------------------
   */
-  
-  #btnScrollToTop {
-    width: 50px;
-    height: 50px;
-    background-color: #bb86fc;
-    color: #fff;
-    margin: 8px;
-    border: none;
-    border-radius: 50%;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
-    text-decoration: none;
-    position: fixed;
-    outline: none;
-    bottom: 10px;
-    right: 10px;
-    animation: up 1.5s infinite;
-    -webkit-animation: up 1.5s infinite;
+
+#btnScrollToTop {
+  width: 50px;
+  height: 50px;
+  background-color: #bb86fc;
+  color: #fff;
+  margin: 8px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  position: fixed;
+  outline: none;
+  bottom: 10px;
+  right: 10px;
+  animation: up 1.5s infinite;
+  -webkit-animation: up 1.5s infinite;
+}
+
+@keyframes up {
+  0% {
+    transform: translate(0);
   }
-  
-  @keyframes up {
-    0% {
-        transform: translate(0);
-    }
-    20% {
-        transform: translateY(-15px);
-    }
-    40% {
-        transform: translate(0);
-    }
+
+  20% {
+    transform: translateY(-15px);
   }
-  
-  @-webkit-keyframes up {
-    0% {
-        transform: translate(0);
-    }
-    20% {
-        transform: translateY(-15px);
-    }
-    40% {
-        transform: translate(0);
-    }
+
+  40% {
+    transform: translate(0);
   }
+}
+
+@-webkit-keyframes up {
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translateY(-15px);
+  }
+
+  40% {
+    transform: translate(0);
+  }
+}
