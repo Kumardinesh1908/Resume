@@ -236,9 +236,8 @@ $(window).scroll(function () {
 
 
 // Contact-Form.js
-
+$(document).ready(function() {
 var form = document.getElementById("contact-form");
-
 async function handleSubmit(event) {
     event.preventDefault();
     var status = document.getElementById("contact-form-status");
@@ -266,4 +265,5 @@ async function handleSubmit(event) {
         status.innerHTML = "Oops! There was a problem submitting your form"
     });
 }
-form.addEventListener("submit", handleSubmit)
+form.addEventListener("submit", handleSubmit);
+});
