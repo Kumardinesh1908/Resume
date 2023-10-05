@@ -147,6 +147,7 @@ html[light-mode="dark"] .navbar-brand:hover {
 
 .nav-link:hover {
   color: rgb(106, 0, 187) !important;
+  font-weight: bolder;
 }
 
 /* nav link for dark mode */
@@ -178,18 +179,20 @@ html[light-mode="dark"] .nav-link:hover {
     width: 32%;
     border-bottom: 3px solid #6a00bb;
   }
-  .nav-item:hover::after  {
+  .nav-item-hover::after {
     content: "";
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: 0.15em;
     bottom: 0;
-    width: 50%;
+    width: 0%;
     background-color: #6a00bb;
     transition: all ease-in-out 280ms;
   }
-
+  .nav-item:hover::after {
+    width: 50%;
+  }
 }
 
 /*  HAMBURGER ANIMATION */
