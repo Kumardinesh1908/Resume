@@ -19,7 +19,8 @@ body {
 }
 
 .header {
-    margin: 100px auto 0px;
+    margin: 60px auto 0px;
+    width: 90%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,7 +28,11 @@ body {
 }
 
 .header-img {
-    margin-top: 20px;
+    margin-top: 40px;
+}
+
+.quote {
+    width: 40%;
 }
 
 .education_head {
