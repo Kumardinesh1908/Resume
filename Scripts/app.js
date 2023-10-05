@@ -261,6 +261,20 @@ $(function () {
     });
 });
 
+//function to remove underline of navlink on hover
+$(document).ready(function () {
+    $("a.nav-link").hover(
+      function () {
+        $(this).removeClass("current-link");
+      },
+      function () {
+        if ($(this).prop("href") == window.location.href) {
+          $(this).addClass("current-link");
+        }
+      }
+    );
+  });
+
 // function to set the lightMode in localStorage
 window.addEventListener("storage", function () {
     if (localStorage.lightMode == "light") {
