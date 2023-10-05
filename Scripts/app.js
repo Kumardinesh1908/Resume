@@ -209,6 +209,7 @@ let upArrow = $(`<button id="btnScrollToTop" onclick="scrollToTop()">
 // Window Loads
 $(function () {
     let bodyElement = $(`body`);
+    bodyElement.prepend(header);
     bodyElement.append(footer);
     bodyElement.append(upArrow);
     $("#btnScrollToTop").css("visibility", "hidden");
