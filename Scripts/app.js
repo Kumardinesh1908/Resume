@@ -168,6 +168,12 @@ let footer = $(`<footer id="contact">
                   </footer>
 `);
 
+// upArrow Button
+let upArrow = $(`<button id="btnScrollToTop" onclick="scrollToTop()">
+                <i class="fas fa-2x fa-angle-up"></i>
+                </button>
+`);
+
 // Window Loads
 $(function () {
     let bodyElement = $(`body`);
