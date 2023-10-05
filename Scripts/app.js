@@ -253,9 +253,11 @@ $(function () {
 });
 
 // function to fetch the location href and update the current nav link design
+const currentPath = window.location.pathname;
 $(function () {
     $("a.nav-link").each(function () {
-        if ($(this).prop("href") == window.location.href) {
+        const linkHref = $(this).prop("href");
+        if (linkHref.endsWith(currentPath) || (linkHref.endsWith("#contact") && currentPath === "")) {
             $(this).addClass("current-link");
         }
     });
@@ -264,11 +266,14 @@ $(function () {
 //function to remove underline of navlink on hover
 $(document).ready(function () {
     $("a.nav-link").hover(
+        // Hover in: Remove the "current-link" class
         function () {
             $(this).removeClass("current-link");
         },
+        // Hover out: Check if the link's href matches the current URL and add the class back if needed
         function () {
-            if ($(this).prop("href") == window.location.href) {
+            const linkHref = $(this).prop("href");
+            if (linkHref.endsWith(currentPath) || (linkHref.endsWith("#contact") && currentPath === "")) {
                 $(this).addClass("current-link");
             }
         }
