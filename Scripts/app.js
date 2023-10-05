@@ -224,54 +224,56 @@ const scrollToTop = () => {
     });
 };
 
-//function for the "Scroll To Top" button to detect the footer
-$(window).scroll(function () {
-    //The button will be hidden until we scroll more than the window's height
-    if ($(window).scrollTop() < $(window).height()) {
-        $("#btnScrollToTop").css("visibility", "hidden");
+// function to toggle the light Theme
+const htmlElement = document.documentElement;
+function toggle_light_mode() {
+    const dark_toggler = document.getElementById('dark_toggler');
+    if (dark_toggler.checked) {
+        htmlElement.setAttribute('light-mode', 'dark');
     } else {
-        $("#btnScrollToTop").css("visibility", "visible");
+        htmlElement.setAttribute('light-mode', 'light');
     }
-});
+}
+
 
 // function to set the lightMode in localStorage
 window.addEventListener("storage", function () {
     if (localStorage.lightMode == "light") {
-      app.setAttribute("light-mode", "light");
+        app.setAttribute("light-mode", "light");
     } else {
-      app.setAttribute("light-mode", "dark");
+        app.setAttribute("light-mode", "dark");
     }
-  });
+});
 
 // Contact-Form.js
-$(document).ready(function() {
-var form = document.getElementById("contact-form");
-async function handleSubmit(event) {
-    event.preventDefault();
-    var status = document.getElementById("contact-form-status");
-    var data = new FormData(event.target);
-    fetch(event.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-            'Accept': 'application/json'
-        }
-    }).then(response => {
-        if (response.ok) {
-            status.innerHTML = "Message sent successfully!";
-            form.reset()
-        } else {
-            response.json().then(data => {
-                if (Object.hasOwn(data, 'errors')) {
-                    status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-                } else {
-                    status.innerHTML = "Oops! There was a problem submitting your form"
-                }
-            })
-        }
-    }).catch(error => {
-        status.innerHTML = "Oops! There was a problem submitting your form"
-    });
-}
-form.addEventListener("submit", handleSubmit);
+$(document).ready(function () {
+    var form = document.getElementById("contact-form");
+    async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("contact-form-status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        }).then(response => {
+            if (response.ok) {
+                status.innerHTML = "Message sent successfully!";
+                form.reset()
+            } else {
+                response.json().then(data => {
+                    if (Object.hasOwn(data, 'errors')) {
+                        status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                    } else {
+                        status.innerHTML = "Oops! There was a problem submitting your form"
+                    }
+                })
+            }
+        }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+        });
+    }
+    form.addEventListener("submit", handleSubmit);
 });
