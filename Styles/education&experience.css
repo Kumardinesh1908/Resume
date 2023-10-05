@@ -1,6 +1,5 @@
 /* -----Education and Experience----- */
 
-/* Dark and Light theme */
 * {
     margin: 0;
     padding: 0;
@@ -19,41 +18,44 @@ body {
     font-weight: 400;
 }
 
-section {
-    padding-top: 70px;
+.header {
+    margin: 100px auto 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-img {
+    margin-top: 20px;
 }
 
 .education_head {
     font-weight: bold;
+    text-align: center;
 }
-
-/*color of education page heading*/
 
 .edu_background {
     color: #4e00bb;
 }
 
-.s2 {
+.main-heading {
     overflow-x: hidden;
-    padding-top: 10px;
+    text-align: center;
+    margin-top: 50px;
 }
 
-.s2 h1 {
-    font-size: 200%;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: 400;
-}
-
-.s2 .head {
+.main-heading .head {
     font-size: 2rem;
     font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 .box-container {
     position: relative;
     width: 75%;
-    margin: -50px auto 100px;
+    margin: 100px auto 100px;
 }
 
 .box {
@@ -126,7 +128,7 @@ section {
 }
 
 html[light-mode="dark"] .duration,
-html[light-mode="dark"] .description{
+html[light-mode="dark"] .description {
     color: white;
 }
 
