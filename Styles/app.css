@@ -139,6 +139,25 @@ html[light-mode="dark"] .navbar-brand:hover {
   color: #ffffff !important;
 }
 
+/* nav link for light mode */
+.nav-link {
+  color: #000000 !important;
+}
+
+.nav-link:hover {
+  color: rgb(106, 0, 187) !important;
+}
+
+/* nav link for dark mode */
+html[light-mode="dark"] .nav-link {
+  color: rgba(255, 255, 255, 0.5) !important;
+
+}
+
+html[light-mode="dark"] .nav-link:hover {
+  color: #ffffff !important;
+}
+
 
 
 /* 
