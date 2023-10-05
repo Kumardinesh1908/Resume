@@ -8,24 +8,6 @@
     font-family: "Poppins", sans-serif;
 }
 
-html[light-mode="light"] {
-    --bg1-color: white;
-    --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    --border: 1px solid #ecf0f3;
-    --meta-col: #444;
-    --head-col: black;
-    --tint-col: #ecf0f3;
-}
-
-html[light-mode="dark"] {
-    --bg1-color: #272727;
-    --shadow: 0 4px 8px 0 rgba(104, 102, 102, 0.2);
-    --border: none;
-    --meta-col: rgb(155, 149, 149);
-    --head-col: #fff;
-    --tint-col: #ecf0f3be;
-}
-
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -34,14 +16,6 @@ html {
 body {
     font-family: "Roboto";
     font-size: 17px;
-    font-weight: 400;
-    /* background-color: #eee; */
-}
-
-h1 {
-    font-size: 200%;
-    text-transform: uppercase;
-    letter-spacing: 3px;
     font-weight: 400;
 }
 
@@ -64,6 +38,13 @@ section {
     padding-top: 10px;
 }
 
+.s2 h1 {
+    font-size: 200%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
 .s2 .head {
     font-size: 2rem;
     font-weight: bold;
@@ -73,7 +54,6 @@ section {
     position: relative;
     width: 75%;
     margin: -50px auto 100px;
-    /* background:white; */
 }
 
 .box {
@@ -141,10 +121,13 @@ section {
 }
 
 .duration {
-    font-weight: 100;
     color: rgb(54, 52, 52);
-    font-size: 0.9rem;
-    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+html[light-mode="dark"] .duration,
+html[light-mode="dark"] .description{
+    color: white;
 }
 
 .certificate {
@@ -159,8 +142,9 @@ section {
 .description {
     font-size: 16px;
     color: rgb(54, 52, 52);
-    line-height: 1.4;
+    line-height: 1.25;
     text-align: justify;
+    padding-top: 10px;
 }
 
 /* ----Divider---- */
