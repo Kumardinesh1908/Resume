@@ -179,14 +179,15 @@ $(function () {
     let bodyElement = $(`body`);
     bodyElement.append(footer);
     bodyElement.append(upArrow);
+    $("#btnScrollToTop").css("visibility", "hidden");
 });
 
 
 //function to scroll to top
 const scrollToTop = () => {
     window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
+        top: 0,
+        left: 0,
+        behavior: "smooth",
     });
-  };
+};
