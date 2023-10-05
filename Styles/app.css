@@ -163,6 +163,33 @@ html[light-mode="dark"] .nav-link:hover {
   .nav-link {
     padding: 6px 21px !important;
   }
+  /* Which the nav-Link is active this will apply to that nav-Link */
+  .current-link {
+    font-weight: bolder;
+    position: relative;
+  }
+  .current-link:after {
+    content: "";
+    position: absolute;
+    left: 34%;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    width: 32%;
+    border-bottom: 3px solid #6a00bb;
+  }
+  .nav-item:hover::after  {
+    content: "";
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 0.15em;
+    bottom: 0;
+    width: 50%;
+    background-color: #6a00bb;
+    transition: all ease-in-out 280ms;
+  }
+
 }
 
 /*  HAMBURGER ANIMATION */
