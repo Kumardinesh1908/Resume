@@ -37,3 +37,74 @@ body {
     width: 100%;
     overflow: hidden;
 }
+
+/* center */
+.center {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-top:192px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Text */
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.name{
+    font-weight: bold;
+}
+
+.text div {
+    height: 35px;
+    width: 35px;
+}
+
+.hand-image {
+    width: 100%;
+    height: 100%;
+}
+
+.user-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* User skills */
+.part-2{
+    margin-top: 36px;
+}
+.user-skills{
+    font-size: 25px ;
+}
+
+/* User Skills Animation */
+.animated-text span {
+    display: none;
+    line-height: 1;
+}
+
+.animated-text span.active {
+    display: inline;
+}
+
+.animated-text:after {
+    content: ".";
+    width: 6px;
+    background: var(--col-icon);
+}
