@@ -1,0 +1,208 @@
+/* ----Skills---- */
+
+.all-skills {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+.web,
+.skill {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    border-radius: 50px;
+    color: white;
+    height: 40px;
+    z-index: 10;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.web {
+    height: 5rem;
+    width: 6rem;
+}
+
+#html, #css, #git {
+    width: 80px;
+}
+
+#javascript,
+#firebase,
+#tailwind {
+    width: 140px;
+}
+
+#react,
+#redux {
+    width: 110px;
+}
+
+#context {
+    width: 160px;
+}
+
+/* Define keyframe animations for each skill */
+@keyframes moveHTML {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-200px,0px);
+    }
+}
+
+.animate-html {
+    animation: moveHTML 1.5s ease-in-out forwards;
+}
+
+@keyframes moveCSS {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0px, -100px);
+    }
+}
+
+.animate-css {
+    animation: moveCSS 1.5s ease-in-out forwards;
+}
+
+@keyframes moveJavaScript {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(240px, 0px);
+    }
+}
+
+.animate-javascript {
+    animation: moveJavaScript 1.5s ease-in-out forwards;
+}
+
+@keyframes moveReact {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0px, 100px);
+    }
+}
+
+.animate-react {
+    animation: moveReact 1.5s ease-in-out forwards;
+}
+
+@keyframes moveRedux {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(300px, 150px);
+    }
+}
+
+.animate-redux {
+    animation: moveRedux 1.5s ease-in-out forwards;
+}
+
+@keyframes moveFirebase {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-300px, -150px);
+    }
+}
+
+.animate-firebase {
+    animation: moveFirebase 1.5s ease-in-out forwards;
+}
+
+@keyframes moveTailwind {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(300px, -150px);
+    }
+}
+
+.animate-tailwind {
+    animation: moveTailwind 1.5s ease-in-out forwards;
+}
+
+@keyframes moveContext {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-300px, 150px);
+    }
+}
+
+.animate-context {
+    animation: moveContext 1.5s ease-in-out forwards;
+}
+
+@keyframes moveGit {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0px, -240px);
+    }
+}
+
+.animate-git {
+    animation: moveGit 1s ease-in-out forwards;
+}
+
+.empty-circle {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+}
+
+.circle-1 {
+    height: 7rem;
+    width: 12rem;
+}
+
+.circle-2 {
+    height: 13rem;
+    width: 25rem;
+}
+
+.circle-3 {
+    height: 18rem;
+    width: 36rem;
+}
+
+.circle-4 {
+    height: 24rem;
+    width: 52rem;
+}
+
+.circle-5 {
+    height: 30rem;
+    width: 70rem;
+}
+
+
