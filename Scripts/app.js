@@ -241,10 +241,26 @@ function toggle_light_mode() {
     const dark_toggler = document.getElementById('dark_toggler');
     if (dark_toggler.checked) {
         htmlElement.setAttribute('light-mode', 'dark');
+        sessionStorage.setItem('lightMode', 'dark');
     } else {
         htmlElement.setAttribute('light-mode', 'light');
+        sessionStorage.setItem('lightMode', 'light');
     }
 }
+
+// Function to consistant the light/dark theme on all pages of website
+$(document).ready(function () {
+    const initialLightMode = sessionStorage.getItem('lightMode');
+    console.log("initialLightMode")
+    if (initialLightMode === 'dark') {
+        htmlElement.setAttribute('light-mode', 'dark');
+        dark_toggler.checked = true;
+    } else {
+        htmlElement.setAttribute('light-mode', 'light');
+        dark_toggler.checked = false;
+    }
+});
+
 
 // function for toggling hamburger(X-button) is-active class
 $(function () {
@@ -281,14 +297,14 @@ $(document).ready(function () {
     );
 });
 
-// function to set the lightMode in localStorage
-window.addEventListener("storage", function () {
-    if (localStorage.lightMode == "light") {
-        app.setAttribute("light-mode", "light");
-    } else {
-        app.setAttribute("light-mode", "dark");
-    }
-});
+// function to set the lightMode in sessionStorage
+// window.addEventListener("storage", function () {
+//     if (sessionStorage.lightMode == "light") {
+//         app.setAttribute("light-mode", "light");
+//     } else {
+//         app.setAttribute("light-mode", "dark");
+//     }
+// });
 
 // Contact-Form.js
 $(document).ready(function () {
