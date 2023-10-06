@@ -920,6 +920,9 @@ html[light-mode="dark"] .description {
     .front-end::after {
         left: -17.7%;
     }
+    .edu-divider{
+        top: 6%;
+    }
 }
 
 @media only screen and (max-width:380px) {
