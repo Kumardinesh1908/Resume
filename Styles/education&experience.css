@@ -28,13 +28,18 @@ body {
     /* border: 1px solid red; */
 }
 
-.header-img {
+.experience-img {
     width: 600px;
     height: 500px;
-    /* border: 1px solid green; */
 }
 
-.header-img experience-img {
+.education-img{
+    width: 500px;
+    height: 500px;
+}
+
+.experience-img experience-video,
+.education-img education-video {
     width: 100%;
     height: 100%;
 }
@@ -196,8 +201,12 @@ html[light-mode="dark"] .description {
     }
 }
 @media only screen and (max-width: 1200px) {
-    .header-img {
+    .experience-img {
         width: 575px;
+        height: 475px;
+    }
+    .education-img{
+        width: 475px;
         height: 475px;
     }
     .quote{
@@ -219,8 +228,12 @@ html[light-mode="dark"] .description {
     }
 }
 @media only screen and (max-width: 1100px) {
-    .header-img {
+    .experience-img {
         width: 550px;
+        height: 450px;
+    }
+    .education-img{
+        width: 450px;
         height: 450px;
     }
     .quote h2 {
@@ -273,8 +286,12 @@ html[light-mode="dark"] .description {
     }
 }
 @media only screen and (max-width: 1036px) {
-    .header-img {
+    .experience-img {
         width: 500px;
+        height: 400px;
+    }
+    .education-img{
+        width: 400px;
         height: 400px;
     }
     .quote{
@@ -358,8 +375,12 @@ html[light-mode="dark"] .description {
     }
 }
 @media only screen and (max-width: 920px) {
-    .header-img {
+    .experience-img {
         width: 450px;
+        height: 350px;
+    }
+    .education-img{
+        width: 350px;
         height: 350px;
     }
     .quote{
@@ -443,8 +464,12 @@ html[light-mode="dark"] .description {
     }
 }
 @media only screen and (max-width: 840px) {
-    .header-img {
+    .experience-img {
         width: 400px;
+        height: 300px;
+    }
+    .education-img{
+        width: 300px;
         height: 300px;
     }
     .quote{
@@ -535,7 +560,8 @@ html[light-mode="dark"] .description {
         margin-top: 120px;
     }
 
-    .header-img {
+    .experience-video,
+    .education-video {
         margin: auto;
         margin-top: 40px;
         width: 90%;
