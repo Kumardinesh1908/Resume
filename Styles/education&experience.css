@@ -34,7 +34,7 @@ body {
     height: 500px;
 }
 
-.education-img{
+.education-img {
     width: 500px;
     height: 500px;
 }
@@ -112,7 +112,8 @@ h4::after {
     z-index: 1;
 }
 
-.nirmal::after {
+.nirmal::after,
+.front-end::after {
     left: -15.75%;
 }
 
@@ -170,9 +171,10 @@ html[light-mode="dark"] .description {
     padding-top: 10px;
 }
 
-/* ----Divider---- */
+/* ----exp-divider---- */
 
-.divider {
+.exp-divider,
+.edu-divider {
     position: absolute;
     width: 0;
     top: 7%;
@@ -181,13 +183,15 @@ html[light-mode="dark"] .description {
     height: 68%;
 }
 
-.divider .traveller {
+.exp-divider .exp-traveller,
+.edu-divider .edu-traveller {
     position: sticky;
     top: 135px;
     z-index: 1;
 }
 
-.divider i {
+.exp-divider i,
+.edu-divider i {
     transform: rotate(90deg);
     margin-top: -15px;
     display: block;
@@ -196,394 +200,512 @@ html[light-mode="dark"] .description {
 }
 
 
-@media only screen and (max-width: 1300px) { 
+@media only screen and (max-width: 1300px) {
     body {
         overflow-x: hidden;
     }
+
     h4::after {
-    right: -16.8%;
+        right: -16.8%;
     }
 }
+
 @media only screen and (max-width: 1200px) {
     body {
         overflow-x: hidden;
     }
+
     .experience-img {
         width: 575px;
         height: 475px;
     }
-    .education-img{
+
+    .education-img {
         width: 475px;
         height: 475px;
     }
-    .quote{
+
+    .quote {
         margin-top: 30px;
     }
+
     .box-container {
         margin: 90px auto 90px;
         width: 80%;
     }
+
     h4::after {
-    right: -16.5%;
+        right: -16.5%;
     }
-    .nirmal::after {
+
+    .nirmal::after,
+    .front-end::after {
         left: -16%;
     }
-    .divider {
-    top: 6%;
-    height: 68.5%;
+
+    .exp-divider {
+        top: 6%;
+        height: 68.5%;
     }
+
 }
+
 @media only screen and (max-width: 1100px) {
     body {
         overflow-x: hidden;
     }
+
     .experience-img {
         width: 550px;
         height: 450px;
     }
-    .education-img{
+
+    .education-img {
         width: 450px;
         height: 450px;
     }
+
     .quote h2 {
         font-size: 1.9rem;
     }
+
     .quote p {
         font-size: 17px;
         font-weight: 600;
     }
+
     .main-heading {
         margin-top: 50px;
     }
+
     .main-heading .head {
         font-size: 1.9rem;
         letter-spacing: 2.5px;
     }
+
     .box-container {
         margin: 90px auto 90px;
         width: 80%;
     }
+
     .logo {
         width: 57px;
     }
+
     #south-street-logo {
         width: 120px;
         margin-top: -15px;
     }
+
     .designation {
         font-size: 1.55rem;
     }
+
     .company-name {
         font-size: 1.15rem;
     }
+
     .duration {
         font-size: 0.85rem;
     }
+
     .description {
-    font-size: 16px;
-    line-height: 1.3;
+        font-size: 16px;
+        line-height: 1.3;
     }
+
     h4::after {
-    right: -17%;
+        right: -17%;
     }
-    .nirmal::after {
+
+    .nirmal::after,
+    .front-end::after {
         left: -16.5%;
     }
-    .divider {
-    top: 6%;
-    height: 68.5%;
+
+    .exp-divider {
+        top: 6%;
+        height: 68.5%;
     }
 }
+
 @media only screen and (max-width: 1036px) {
     body {
         overflow-x: hidden;
     }
+
     .experience-img {
         width: 500px;
         height: 400px;
     }
-    .education-img{
+
+    .education-img {
         width: 400px;
         height: 400px;
     }
-    .quote{
+
+    .quote {
         margin-top: 30px;
     }
+
     .quote h2 {
         font-size: 1.8rem;
     }
+
     .quote p {
         font-size: 16.8px;
         font-weight: 600;
     }
+
     .main-heading {
         margin-top: 50px;
     }
+
     .main-heading .head {
         font-size: 1.8rem;
         letter-spacing: 2px;
     }
+
     .box-container {
         margin: 80px auto 80px;
         width: 85%;
     }
+
     .logo {
         width: 55px;
     }
+
     #south-street-logo {
         width: 120px;
         margin-top: -15px;
     }
+
     .designation {
         font-size: 1.5rem;
     }
+
     .company-name {
         font-size: 1.1rem;
     }
+
     .duration {
         font-size: 0.85rem;
     }
+
     .description {
-    font-size: 15px;
-    line-height: 1.3;
+        font-size: 15px;
+        line-height: 1.3;
     }
+
     h4::after {
-    right: -17%;
+        right: -17%;
     }
-    .nirmal::after {
+
+    .nirmal::after,
+    .front-end::after {
         left: -16.5%;
     }
-    .divider {
-    top: 6%;
-    height: 69.5%;
+
+    .exp-divider {
+        top: 6%;
+        height: 69.5%;
     }
 }
+
 @media only screen and (max-width: 970px) {
     body {
         overflow-x: hidden;
     }
+
     .logo {
         width: 54px;
     }
+
     .designation {
         font-size: 1.35rem;
     }
+
     .company-name {
         font-size: 1.05rem;
     }
+
     .duration {
         font-size: 0.85rem;
     }
+
     .description {
-    font-size: 14.8px;
-    line-height: 1.38;
+        font-size: 14.8px;
+        line-height: 1.38;
     }
+
     h4::after {
-    right: -17.2%;
+        right: -17.2%;
     }
-    .nirmal::after {
+
+    .nirmal::after,
+    .front-end::after {
         left: -16.8%;
     }
-    .divider {
-    top: 6%;
-    height: 68.5%;
+
+    .exp-divider {
+        top: 6%;
+        height: 68.5%;
     }
 }
+
 @media only screen and (max-width: 920px) {
     body {
         overflow-x: hidden;
     }
+
     .experience-img {
         width: 450px;
         height: 350px;
     }
-    .education-img{
+
+    .education-img {
         width: 350px;
         height: 350px;
     }
-    .quote{
+
+    .quote {
         margin-top: 30px;
     }
+
     .quote h2 {
         font-size: 1.6rem;
     }
+
     .quote p {
         font-size: 16.5px;
         font-weight: 600;
     }
+
     .main-heading {
         margin-top: 50px;
     }
+
     .main-heading .head {
         font-size: 1.6rem;
         letter-spacing: 1.8px;
     }
+
     .box-container {
         margin: 70px auto 70px;
         width: 90%;
     }
+
     .logo {
         width: 53px;
     }
+
     #south-street-logo {
         width: 110px;
         margin-top: -15px;
     }
+
     .designation {
         font-size: 1.35rem;
     }
+
     .company-name {
         font-size: 1.05rem;
     }
+
     .duration {
         font-size: 0.9rem;
     }
+
     .description {
-    font-size: 14px;
-    line-height: 1.4;
+        font-size: 14px;
+        line-height: 1.4;
     }
+
     h4::after {
-    right: -17.3%;
+        right: -17.3%;
     }
-    .nirmal::after {
+
+    .nirmal::after,
+    .front-end::after {
         left: -16.8%;
     }
-    .divider {
-    top: 6%;
-    height: 68.5%;
+
+    .exp-divider {
+        top: 6%;
+        height: 68.5%;
     }
 }
+
 @media only screen and (max-width: 875px) {
     body {
         overflow-x: hidden;
     }
+
     .logo {
         width: 54px;
     }
+
     .designation {
         font-size: 1.35rem;
     }
+
     .company-name {
         font-size: 1.05rem;
     }
+
     .duration {
         font-size: 0.9rem;
     }
+
     .description {
-    font-size: 13.8px;
-    line-height: 1.4;
+        font-size: 13.8px;
+        line-height: 1.4;
     }
+
     h4::after {
-    right: -17.2%;
+        right: -17.2%;
     }
-    .nirmal::after {
+
+    .nirmal::after,
+    .front-end::after {
         left: -17%;
     }
-    .divider {
-    top: 6%;
-    height: 68.5%;
+
+    .exp-divider {
+        top: 6%;
+        height: 68.5%;
     }
 }
+
 @media only screen and (max-width: 840px) {
     body {
         overflow-x: hidden;
     }
+
     .experience-img {
         width: 400px;
         height: 300px;
     }
-    .education-img{
+
+    .education-img {
         width: 300px;
         height: 300px;
     }
-    .quote{
+
+    .quote {
         margin-top: 30px;
     }
+
     .quote h2 {
         font-size: 1.5rem;
     }
+
     .quote p {
         font-size: 16px;
         font-weight: 600;
     }
+
     .main-heading {
         margin-top: 50px;
     }
+
     .main-heading .head {
         font-size: 1.5rem;
         letter-spacing: 1.5px;
     }
+
     .box-container {
         margin: 50px auto 50px;
         width: 90%;
     }
+
     .logo {
         width: 52px;
     }
+
     #south-street-logo {
         width: 110px;
         margin-top: -10px;
     }
+
     .designation {
         font-size: 1.3rem;
     }
+
     .company-name {
         font-size: 1rem;
     }
+
     .duration {
         font-size: 0.85rem;
     }
+
     .description {
-    font-size: 13.5px;
-    line-height: 1.4;
+        font-size: 13.5px;
+        line-height: 1.4;
     }
+
     h4::after {
-    right: -17.9%;
+        right: -17.9%;
     }
-    .nirmal::after {
+
+    .nirmal::after,
+    .front-end::after {
         left: -17.3%;
     }
-    .divider {
-    top: 6%;
-    height: 68.5%;
+
+    .exp-divider {
+        top: 6%;
+        height: 68.5%;
     }
 }
+
 @media only screen and (max-width: 795px) {
     body {
         overflow-x: hidden;
     }
+
     .logo {
         width: 50px;
     }
+
     .designation {
         font-size: 1.25rem;
     }
+
     .company-name {
         font-size: 0.95rem;
     }
+
     .duration {
         font-size: 0.75rem;
     }
+
     .description {
-    font-size: 13px;
-    line-height: 1.35;
+        font-size: 13px;
+        line-height: 1.35;
     }
+
     h4::after {
-    right: -17.8%;
+        right: -17.9%;
     }
-    .nirmal::after {
-        left: -17.5%;
+
+    .nirmal::after,
+    .front-end::after {
+        left: -17.3%;
     }
-    .divider {
-    top: 6%;
-    height: 68%;
+
+    .exp-divider {
+        top: 6%;
+        height: 68%;
     }
 }
+
 @media only screen and (max-width:768px) {
     body {
         overflow-x: hidden;
     }
+
     .header {
         flex-direction: column-reverse;
         text-align: center;
@@ -629,7 +751,8 @@ html[light-mode="dark"] .description {
     }
 
     h4::after,
-    .nirmal::after {
+    .nirmal::after,
+    .front-end::after {
         left: -15.7%;
     }
 
@@ -645,121 +768,168 @@ html[light-mode="dark"] .description {
         margin-bottom: -20px;
     }
 
-    .divider {
+    .exp-divider {
         left: 10%;
         top: 13%;
         height: 83%;
     }
 
-    .divider i {
+    .edu-divider {
+        left: 10%;
+        top: 8%;
+        height: 70%;
+    }
+
+    .exp-divider i {
         margin-top: -20px;
     }
 }
+
 @media only screen and (max-width:700px) {
     body {
         overflow-x: hidden;
     }
+
     h4::after,
-    .nirmal::after {
-        left: -16%;
+    .nirmal::after,
+    .front-end::after {
+        left: -15.8%;
     }
-    .divider {
+
+    .exp-divider {
         left: 10%;
         top: 10%;
         height: 87%;
     }
 }
+
 @media only screen and (max-width:665px) {
     body {
         overflow-x: hidden;
     }
-    .divider {
+
+    .exp-divider {
         top: 5.5%;
         height: 91.5%;
-    }   
+    }
+
     h4::after,
-    .nirmal::after {
+    .nirmal::after,
+    .front-end::after {
         left: -16.1%;
     }
 }
+
 @media only screen and (max-width:640px) {
     body {
         overflow-x: hidden;
     }
+
     h4::after,
-    .nirmal::after {
+    .nirmal::after,
+    .front-end::after {
         left: -16.2%;
     }
 }
+
 @media only screen and (max-width:600px) {
     body {
         overflow-x: hidden;
     }
+
     h4::after,
-    .nirmal::after {
+    .nirmal::after,
+    .front-end::after {
         left: -16.35%;
     }
 }
+
 @media only screen and (max-width:575px) {
     body {
         overflow-x: hidden;
     }
+
     h4::after,
-    .nirmal::after {
+    .nirmal::after,
+    .front-end::after {
         left: -16.5%;
     }
 }
+
 @media only screen and (max-width:545px) {
     body {
         overflow-x: hidden;
     }
+
     h4::after,
-    .nirmal::after {
+    .nirmal::after,
+    .front-end::after {
         left: -16.8%;
     }
 }
+
 @media only screen and (max-width:490px) {
     body {
         overflow-x: hidden;
     }
+
     h4::after,
-    .nirmal::after {
+    .nirmal::after,
+    .front-end::after {
         left: -17%;
     }
 }
+
+@media only screen and (max-width:460px) {
+    .edu-divider {
+        height: 68%;
+    }
+}
+
 @media only screen and (max-width:440px) {
     body {
         overflow-x: hidden;
     }
+
     h4::after,
-    .nirmal::after {
+    .nirmal::after,
+    .front-end::after {
         left: -17.2%;
     }
 }
+
 @media only screen and (max-width:420px) {
     body {
         overflow-x: hidden;
     }
+
     h4::after,
-    .nirmal::after {
+    .nirmal::after,
+    .front-end::after {
         left: -17.5%;
     }
 }
+
 @media only screen and (max-width:400px) {
     body {
         overflow-x: hidden;
     }
+
     h4::after,
-    .nirmal::after {
+    .nirmal::after,
+    .front-end::after {
         left: -17.7%;
     }
 }
+
 @media only screen and (max-width:380px) {
     body {
         overflow-x: hidden;
     }
+
     h4::after,
-    .nirmal::after {
+    .nirmal::after,
+    .front-end::after {
         left: -17.9%;
     }
 }
