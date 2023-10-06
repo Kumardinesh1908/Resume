@@ -11,32 +11,6 @@ window.addEventListener("load", () => {
     $(".loader-container").fadeOut(2500);
 })
 
-// function to toggle the light Theme
-const htmlElement = document.documentElement;
-function toggle_light_mode() {
-    const dark_toggler = document.getElementById('dark_toggler');
-    if (dark_toggler.checked) {
-        htmlElement.setAttribute('light-mode', 'dark');
-        sessionStorage.setItem('lightMode', 'dark');
-    } else {
-        htmlElement.setAttribute('light-mode', 'light');
-        sessionStorage.setItem('lightMode', 'light');
-    }
-}
-
-// Function to consistant the light/dark theme on all pages of website
-$(document).ready(function () {
-    const initialLightMode = sessionStorage.getItem('lightMode');
-    console.log("initialLightMode")
-    if (initialLightMode === 'dark') {
-        htmlElement.setAttribute('light-mode', 'dark');
-        dark_toggler.checked = true;
-    } else {
-        htmlElement.setAttribute('light-mode', 'light');
-        dark_toggler.checked = false;
-    }
-});
-
 // Navbar
 let header = $(`<nav class="navbar navbar-expand-lg fixed-top dark-theme" id="navbar">
                 <a class="navbar-brand" href="index.html">Dinesh Kumar </a>
@@ -258,6 +232,32 @@ $(window).scroll(function () {
         $("#btnScrollToTop").css("visibility", "hidden");
     } else {
         $("#btnScrollToTop").css("visibility", "visible");
+    }
+});
+
+// function to toggle the light Theme
+const htmlElement = document.documentElement;
+function toggle_light_mode() {
+    const dark_toggler = document.getElementById('dark_toggler');
+    if (dark_toggler.checked) {
+        htmlElement.setAttribute('light-mode', 'dark');
+        sessionStorage.setItem('lightMode', 'dark');
+    } else {
+        htmlElement.setAttribute('light-mode', 'light');
+        sessionStorage.setItem('lightMode', 'light');
+    }
+}
+
+// Function to consistant the light/dark theme on all pages of website
+$(document).ready(function () {
+    const initialLightMode = sessionStorage.getItem('lightMode');
+    console.log("initialLightMode")
+    if (initialLightMode === 'dark') {
+        htmlElement.setAttribute('light-mode', 'dark');
+        dark_toggler.checked = true;
+    } else {
+        htmlElement.setAttribute('light-mode', 'light');
+        dark_toggler.checked = false;
     }
 });
 
