@@ -30,7 +30,9 @@
     width: 6rem;
 }
 
-#html, #css, #git {
+#html,
+#css,
+#git {
     width: 80px;
 }
 
@@ -54,8 +56,9 @@
     0% {
         transform: translate(0, 0);
     }
+
     100% {
-        transform: translate(-200px,0px);
+        transform: translate(-200px, 0px);
     }
 }
 
@@ -178,7 +181,7 @@
 .empty-circle {
     position: absolute;
     border-radius: 50%;
-    border: 1px solid lightgrey ;
+    border: 1px solid lightgrey;
 }
 
 .circle-1 {
@@ -207,3 +210,173 @@
 }
 
 
+/* Media query for skills */
+/* @media only screen and (max-width:1200px){
+    .circle-1 {
+        height: 7rem;
+        width: 10rem;
+    }
+    
+    .circle-2 {
+        height: 13rem;
+        width: 20rem;
+    }
+    
+    .circle-3 {
+        height: 18rem;
+        width: 32rem;
+    }
+    
+    .circle-4 {
+        height: 24rem;
+        width: 46rem;
+    }
+    
+    .circle-5 {
+        height: 30rem;
+        width: 60rem;
+    } 
+} */
+
+@media only screen and (min-width:320px) and (max-width:400px) {
+    .all-skills{
+        margin: 0px;
+    }
+    .web,
+    .skill {
+        font-size: 0.6rem;
+        height: 22px;
+    }
+
+    .web {
+        height: 3rem;
+        width: 4rem;
+    }
+
+    #html,
+    #css,
+    #git {
+        width: 40px;
+    }
+
+    #javascript,
+    #firebase,
+    #tailwind {
+        width: 75px;
+    }
+
+    #react,
+    #redux {
+        width: 60px;
+    }
+
+    #context {
+        width: 90px;
+    }
+    @keyframes moveHTML {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-80px, 0px);
+        }
+    }
+    @keyframes moveCSS {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, -65px);
+        }
+    }
+    @keyframes moveJavaScript {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(100px, 0px);
+        }
+    }
+    @keyframes moveReact {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, 60px);
+        }
+    }
+    @keyframes moveRedux {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(120px, 85px);
+        }
+    }
+    @keyframes moveFirebase {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-120px, -85px);
+        }
+    }
+    @keyframes moveTailwind {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(120px, -85px);
+        }
+    }
+    @keyframes moveContext {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-120px, 85px);
+        }
+    }
+    @keyframes moveGit {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, -120px);
+        }
+    }
+
+    .circle-1 {
+        height: 5rem;
+        width: 6.5rem;
+    }
+
+    .circle-2 {
+        height: 8rem;
+        width: 10rem;
+    }
+
+    .circle-3 {
+        height: 12rem;
+        width: 15rem;
+    }
+
+    .circle-4 {
+        height: 15rem;
+        width: 18rem;
+    }
+
+    .circle-5 {
+        height: 19rem;
+        width: 21rem;
+    }
+}
