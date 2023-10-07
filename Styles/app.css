@@ -51,7 +51,6 @@ html[data-theme="light"] {
   --col-icon-linkedin: #0e76a8;
   --col-icon-github: #24292e;
   --col-icon-instagram: rgb(201, 94, 174);
-  --col-icon-mail: rgb(209, 82, 82);
   --shadow-col: rgba(0, 0, 0, 0.3);
 }
 
@@ -162,7 +161,7 @@ html[light-mode="dark"] .nav-link:hover {
 
 @media only screen and (min-width: 1024px) {
   .nav-link {
-    padding: 6px 21px !important;
+    padding: 6px 17px !important;
   }
 
   /* Which the nav-Link is active this will apply to that nav-Link */
@@ -289,6 +288,14 @@ html[light-mode="dark"] .third {
   transition: all 0.9s;
   background-color: #bb86fc;
 }
+
+@media only screen and (max-width:991px){
+  .dark_toggler{
+    position: relative;
+    left: 45%;
+  }
+}
+
 /* 
 ---------------------
 Contact Form CSS 
@@ -443,6 +450,8 @@ Contact Form CSS
 
   #contact-form-container {
     width: 100%;
+    margin-top: -20px;
+    margin-bottom: 20px;
   }
 
   #my-details-container {
