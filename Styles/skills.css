@@ -248,6 +248,11 @@
         font-size: 0.6rem;
         height: 22px;
     }
+    html[light-mode="dark"] .web,
+    html[light-mode="dark"] .skill{
+        background: white;
+        color: black;
+    }
 
     .web {
         height: 3rem;
