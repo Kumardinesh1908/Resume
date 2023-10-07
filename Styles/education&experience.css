@@ -869,7 +869,11 @@ html[light-mode="dark"] .description {
         left: -16.35%;
     }
 }
-
+@media only screen and (max-width: 609px) and (min-width: 584px) {
+.edu-divider{
+    height: 68.5%;
+}
+    }
 @media only screen and (max-width:575px) {
     body {
         overflow-x: hidden;
@@ -949,6 +953,7 @@ html[light-mode="dark"] .description {
 
     .edu-divider {
         top: 6%;
+        height: 69.5%;
     }
 }
 
