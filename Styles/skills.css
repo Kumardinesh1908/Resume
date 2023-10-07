@@ -210,35 +210,1822 @@
 }
 
 
-/* Media query for skills */
-/* @media only screen and (max-width:1200px){
+@media only screen and (max-width:1100px) {
+    body{
+        overflow-x: hidden;
+    }
+    .all-skills{
+        margin: 80px;
+        height: 70vh;
+    }
+    .web,
+    .skill {
+        font-size: 1.05rem;
+        height: 40px;
+    }
+    html[light-mode="dark"] .web,
+    html[light-mode="dark"] .skill{
+        background: white;
+        color: black;
+    }
+
+    .web {
+        height: 6.5rem;
+        width: 7.5rem;
+    }
+
+    #html,
+    #css,
+    #git {
+        width: 80px;
+    }
+
+    #javascript,
+    #firebase,
+    #tailwind {
+        width: 135px;
+    }
+
+    #react,
+    #redux {
+        width: 115px;
+    }
+
+    #context {
+        width: 155px;
+    }
+    @keyframes moveHTML {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-185px, 0px);
+        }
+    }
+    @keyframes moveCSS {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, -115px);
+        }
+    }
+    @keyframes moveJavaScript {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(235px, 0px);
+        }
+    }
+    @keyframes moveReact {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, 115px);
+        }
+    }
+    @keyframes moveRedux {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(325px, 150px);
+        }
+    }
+    @keyframes moveFirebase {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-325px, -150px);
+        }
+    }
+    @keyframes moveTailwind {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(325px, -150px);
+        }
+    }
+    @keyframes moveContext {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-325px, 150px);
+        }
+    }
+    @keyframes moveGit {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, -225px);
+        }
+    }
+
     .circle-1 {
-        height: 7rem;
-        width: 10rem;
+        height: 10rem;
+        width: 12rem;
     }
-    
+
     .circle-2 {
-        height: 13rem;
-        width: 20rem;
+        height: 14.5rem;
+        width: 23rem;
     }
+
+    .circle-3 {
+        height: 18.5rem;
+        width: 36rem;
+    }
+
+    .circle-4 {
+        height: 23rem;
+        width: 48rem;
+    }
+
+    .circle-5 {
+        height: 29rem;
+        width: 58rem;
+    }
+}
+@media only screen and (max-width:950px) {
+    body{
+        overflow-x: hidden;
+    }
+    .all-skills{
+        margin: 80px;
+        height: 70vh;
+    }
+    .web,
+    .skill {
+        font-size: 1.05rem;
+        height: 38px;
+    }
+    html[light-mode="dark"] .web,
+    html[light-mode="dark"] .skill{
+        background: white;
+        color: black;
+    }
+
+    .web {
+        height: 6.5rem;
+        width: 7.5rem;
+    }
+
+    #html,
+    #css,
+    #git {
+        width: 80px;
+    }
+
+    #javascript,
+    #firebase,
+    #tailwind {
+        width: 135px;
+    }
+
+    #react,
+    #redux {
+        width: 115px;
+    }
+
+    #context {
+        width: 155px;
+    }
+    @keyframes moveHTML {
+        0% {
+            transform: translate(0, 0);
+        }
     
+        100% {
+            transform: translate(-180px, 0px);
+        }
+    }
+    @keyframes moveCSS {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, -110px);
+        }
+    }
+    @keyframes moveJavaScript {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(225px, 0px);
+        }
+    }
+    @keyframes moveReact {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, 110px);
+        }
+    }
+    @keyframes moveRedux {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(310px, 140px);
+        }
+    }
+    @keyframes moveFirebase {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-310px, -140px);
+        }
+    }
+    @keyframes moveTailwind {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(310px, -140px);
+        }
+    }
+    @keyframes moveContext {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-310px, 140px);
+        }
+    }
+    @keyframes moveGit {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, -225px);
+        }
+    }
+
+    .circle-1 {
+        height: 10rem;
+        width: 12rem;
+    }
+
+    .circle-2 {
+        height: 14rem;
+        width: 23rem;
+    }
+
     .circle-3 {
         height: 18rem;
+        width: 34rem;
+    }
+
+    .circle-4 {
+        height: 22.5rem;
+        width: 45rem;
+    }
+
+    .circle-5 {
+        height: 28.5rem;
+        width: 55rem;
+    }
+}
+@media only screen and (max-width:900px) {
+    body{
+        overflow-x: hidden;
+    }
+    .all-skills{
+        margin: 80px;
+        height: 70vh;
+    }
+    .web,
+    .skill {
+        font-size: 1rem;
+        height: 35px;
+    }
+    html[light-mode="dark"] .web,
+    html[light-mode="dark"] .skill{
+        background: white;
+        color: black;
+    }
+
+    .web {
+        height: 6.5rem;
+        width: 7.5rem;
+    }
+
+    #html,
+    #css,
+    #git {
+        width: 80px;
+    }
+
+    #javascript,
+    #firebase,
+    #tailwind {
+        width: 125px;
+    }
+
+    #react,
+    #redux {
+        width: 110px;
+    }
+
+    #context {
+        width: 145px;
+    }
+    @keyframes moveHTML {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-180px, 0px);
+        }
+    }
+    @keyframes moveCSS {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, -110px);
+        }
+    }
+    @keyframes moveJavaScript {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(225px, 0px);
+        }
+    }
+    @keyframes moveReact {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, 110px);
+        }
+    }
+    @keyframes moveRedux {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(270px, 140px);
+        }
+    }
+    @keyframes moveFirebase {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-270px, -140px);
+        }
+    }
+    @keyframes moveTailwind {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(270px, -140px);
+        }
+    }
+    @keyframes moveContext {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-270px, 140px);
+        }
+    }
+    @keyframes moveGit {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, -225px);
+        }
+    }
+
+    .circle-1 {
+        height: 10rem;
+        width: 12rem;
+    }
+
+    .circle-2 {
+        height: 14rem;
+        width: 23rem;
+    }
+
+    .circle-3 {
+        height: 18rem;
+        width: 34rem;
+    }
+
+    .circle-4 {
+        height: 22.5rem;
+        width: 44rem;
+    }
+
+    .circle-5 {
+        height: 28.5rem;
+        width: 52rem;
+    }
+}
+@media only screen and (max-width:850px) {
+    body{
+        overflow-x: hidden;
+    }
+    .all-skills{
+        margin: 80px;
+        height: 70vh;
+    }
+    .web,
+    .skill {
+        font-size: 1rem;
+        height: 35px;
+    }
+    html[light-mode="dark"] .web,
+    html[light-mode="dark"] .skill{
+        background: white;
+        color: black;
+    }
+
+    .web {
+        height: 6.5rem;
+        width: 7.5rem;
+    }
+
+    #html,
+    #css,
+    #git {
+        width: 80px;
+    }
+
+    #javascript,
+    #firebase,
+    #tailwind {
+        width: 125px;
+    }
+
+    #react,
+    #redux {
+        width: 110px;
+    }
+
+    #context {
+        width: 145px;
+    }
+    @keyframes moveHTML {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-180px, 0px);
+        }
+    }
+    @keyframes moveCSS {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, -110px);
+        }
+    }
+    @keyframes moveJavaScript {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(225px, 0px);
+        }
+    }
+    @keyframes moveReact {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, 110px);
+        }
+    }
+    @keyframes moveRedux {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(270px, 140px);
+        }
+    }
+    @keyframes moveFirebase {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-270px, -140px);
+        }
+    }
+    @keyframes moveTailwind {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(270px, -140px);
+        }
+    }
+    @keyframes moveContext {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-270px, 140px);
+        }
+    }
+    @keyframes moveGit {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, -225px);
+        }
+    }
+
+    .circle-1 {
+        height: 10rem;
+        width: 12rem;
+    }
+
+    .circle-2 {
+        height: 14rem;
+        width: 23rem;
+    }
+
+    .circle-3 {
+        height: 18rem;
+        width: 34rem;
+    }
+
+    .circle-4 {
+        height: 22.5rem;
+        width: 42rem;
+    }
+
+    .circle-5 {
+        height: 28.5rem;
+        width: 49rem;
+    }
+}
+@media only screen and (max-width:800px) {
+    body{
+        overflow-x: hidden;
+    }
+    .all-skills{
+        margin: 80px;
+        height: 70vh;
+    }
+    .web,
+    .skill {
+        font-size: 1rem;
+        height: 35px;
+    }
+    html[light-mode="dark"] .web,
+    html[light-mode="dark"] .skill{
+        background: white;
+        color: black;
+    }
+
+    .web {
+        height: 6rem;
+        width: 7rem;
+    }
+
+    #html,
+    #css,
+    #git {
+        width: 70px;
+    }
+
+    #javascript,
+    #firebase,
+    #tailwind {
+        width: 115px;
+    }
+
+    #react,
+    #redux {
+        width: 100px;
+    }
+
+    #context {
+        width: 135px;
+    }
+    @keyframes moveHTML {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-180px, 0px);
+        }
+    }
+    @keyframes moveCSS {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, -110px);
+        }
+    }
+    @keyframes moveJavaScript {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(215px, 0px);
+        }
+    }
+    @keyframes moveReact {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, 110px);
+        }
+    }
+    @keyframes moveRedux {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(250px, 140px);
+        }
+    }
+    @keyframes moveFirebase {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-250px, -140px);
+        }
+    }
+    @keyframes moveTailwind {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(250px, -140px);
+        }
+    }
+    @keyframes moveContext {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-250px, 140px);
+        }
+    }
+    @keyframes moveGit {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, -225px);
+        }
+    }
+
+    .circle-1 {
+        height: 10rem;
+        width: 12rem;
+    }
+
+    .circle-2 {
+        height: 14rem;
+        width: 23rem;
+    }
+
+    .circle-3 {
+        height: 18rem;
+        width: 31.5rem;
+    }
+
+    .circle-4 {
+        height: 22.5rem;
+        width: 39rem;
+    }
+
+    .circle-5 {
+        height: 28.5rem;
+        width: 45.5rem;
+    }
+}
+@media only screen and (max-width:750px) {
+    body{
+        overflow-x: hidden;
+    }
+    .all-skills{
+        margin: 80px;
+        height: 70vh;
+    }
+    .web,
+    .skill {
+        font-size: 1rem;
+        height: 35px;
+    }
+    html[light-mode="dark"] .web,
+    html[light-mode="dark"] .skill{
+        background: white;
+        color: black;
+    }
+
+    .web {
+        height: 6rem;
+        width: 7rem;
+    }
+
+    #html,
+    #css,
+    #git {
+        width: 70px;
+    }
+
+    #javascript,
+    #firebase,
+    #tailwind {
+        width: 115px;
+    }
+
+    #react,
+    #redux {
+        width: 100px;
+    }
+
+    #context {
+        width: 135px;
+    }
+    @keyframes moveHTML {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-160px, 0px);
+        }
+    }
+    @keyframes moveCSS {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, -110px);
+        }
+    }
+    @keyframes moveJavaScript {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(195px, 0px);
+        }
+    }
+    @keyframes moveReact {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, 110px);
+        }
+    }
+    @keyframes moveRedux {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(235px, 140px);
+        }
+    }
+    @keyframes moveFirebase {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-235px, -140px);
+        }
+    }
+    @keyframes moveTailwind {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(235px, -140px);
+        }
+    }
+    @keyframes moveContext {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-235px, 140px);
+        }
+    }
+    @keyframes moveGit {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, -225px);
+        }
+    }
+
+    .circle-1 {
+        height: 10rem;
+        width: 12rem;
+    }
+
+    .circle-2 {
+        height: 14rem;
+        width: 21rem;
+    }
+
+    .circle-3 {
+        height: 18rem;
+        width: 29rem;
+    }
+
+    .circle-4 {
+        height: 22rem;
+        width: 36rem;
+    }
+
+    .circle-5 {
+        height: 28rem;
+        width: 42rem;
+    }
+}
+@media only screen and (max-width:700px) {
+    body{
+        overflow-x: hidden;
+    }
+    .all-skills{
+        margin: 80px;
+        height: 70vh;
+    }
+    .web,
+    .skill {
+        font-size: 1rem;
+        height: 35px;
+    }
+    html[light-mode="dark"] .web,
+    html[light-mode="dark"] .skill{
+        background: white;
+        color: black;
+    }
+
+    .web {
+        height: 6rem;
+        width: 7rem;
+    }
+
+    #html,
+    #css,
+    #git {
+        width: 70px;
+    }
+
+    #javascript,
+    #firebase,
+    #tailwind {
+        width: 115px;
+    }
+
+    #react,
+    #redux {
+        width: 100px;
+    }
+
+    #context {
+        width: 135px;
+    }
+    @keyframes moveHTML {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-160px, 0px);
+        }
+    }
+    @keyframes moveCSS {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, -80px);
+        }
+    }
+    @keyframes moveJavaScript {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(175px, 0px);
+        }
+    }
+    @keyframes moveReact {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, 110px);
+        }
+    }
+    @keyframes moveRedux {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(225px, 140px);
+        }
+    }
+    @keyframes moveFirebase {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-225px, -120px);
+        }
+    }
+    @keyframes moveTailwind {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(225px, -120px);
+        }
+    }
+    @keyframes moveContext {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-225px, 140px);
+        }
+    }
+    @keyframes moveGit {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, -175px);
+        }
+    }
+
+    .circle-1 {
+        height: 10rem;
+        width: 14rem;
+    }
+
+    .circle-2 {
+        height: 14rem;
+        width: 21rem;
+    }
+
+    .circle-3 {
+        height: 18rem;
+        width: 28.5rem;
+    }
+
+    .circle-4 {
+        height: 22rem;
+        width: 34rem;
+    }
+
+    .circle-5 {
+        height: 26rem;
+        width: 39rem;
+    }
+}
+@media only screen and (max-width:650px) {
+    body{
+        overflow-x: hidden;
+    }
+    .all-skills{
+        margin: 80px;
+        height: 65vh;
+    }
+    .web,
+    .skill {
+        font-size: 0.95rem;
+        height: 30px;
+    }
+    html[light-mode="dark"] .web,
+    html[light-mode="dark"] .skill{
+        background: white;
+        color: black;
+    }
+
+    .web {
+        height: 6rem;
+        width: 7rem;
+    }
+
+    #html,
+    #css,
+    #git {
+        width: 60px;
+    }
+
+    #javascript,
+    #firebase,
+    #tailwind {
+        width: 105px;
+    }
+
+    #react,
+    #redux {
+        width: 90px;
+    }
+
+    #context {
+        width: 120px;
+    }
+    @keyframes moveHTML {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-160px, 0px);
+        }
+    }
+    @keyframes moveCSS {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, -80px);
+        }
+    }
+    @keyframes moveJavaScript {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(175px, 0px);
+        }
+    }
+    @keyframes moveReact {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, 110px);
+        }
+    }
+    @keyframes moveRedux {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(210px, 140px);
+        }
+    }
+    @keyframes moveFirebase {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-210px, -120px);
+        }
+    }
+    @keyframes moveTailwind {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(210px, -120px);
+        }
+    }
+    @keyframes moveContext {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-210px, 140px);
+        }
+    }
+    @keyframes moveGit {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, -160px);
+        }
+    }
+
+    .circle-1 {
+        height: 10rem;
+        width: 14rem;
+    }
+
+    .circle-2 {
+        height: 14rem;
+        width: 21rem;
+    }
+
+    .circle-3 {
+        height: 17rem;
+        width: 26rem;
+    }
+
+    .circle-4 {
+        height: 20rem;
+        width: 31rem;
+    }
+
+    .circle-5 {
+        height: 24rem;
+        width: 36rem;
+    }
+}
+@media only screen and (max-width:600px) {
+    body{
+        overflow-x: hidden;
+    }
+    .all-skills{
+        margin: 80px;
+        height: 65vh;
+    }
+    .web,
+    .skill {
+        font-size: 0.8rem;
+        height: 25px;
+    }
+    html[light-mode="dark"] .web,
+    html[light-mode="dark"] .skill{
+        background: white;
+        color: black;
+    }
+
+    .web {
+        height: 6rem;
+        width: 7rem;
+    }
+
+    #html,
+    #css,
+    #git {
+        width: 55px;
+    }
+
+    #javascript,
+    #firebase,
+    #tailwind {
+        width: 95px;
+    }
+
+    #react,
+    #redux {
+        width: 80px;
+    }
+
+    #context {
+        width: 110px;
+    }
+    @keyframes moveHTML {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-150px, 0px);
+        }
+    }
+    @keyframes moveCSS {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, -80px);
+        }
+    }
+    @keyframes moveJavaScript {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(160px, 0px);
+        }
+    }
+    @keyframes moveReact {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, 100px);
+        }
+    }
+    @keyframes moveRedux {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(175px, 130px);
+        }
+    }
+    @keyframes moveFirebase {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-175px, -125px);
+        }
+    }
+    @keyframes moveTailwind {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(175px, -125px);
+        }
+    }
+    @keyframes moveContext {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-175px, 130px);
+        }
+    }
+    @keyframes moveGit {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, -160px);
+        }
+    }
+
+    .circle-1 {
+        height: 10rem;
+        width: 13.5rem;
+    }
+
+    .circle-2 {
+        height: 13rem;
+        width: 19rem;
+    }
+
+    .circle-3 {
+        height: 17rem;
+        width: 23.5rem;
+    }
+
+    .circle-4 {
+        height: 20rem;
+        width: 27.5rem;
+    }
+
+    .circle-5 {
+        height: 24rem;
         width: 32rem;
     }
-    
-    .circle-4 {
-        height: 24rem;
-        width: 46rem;
+}
+@media only screen and (max-width:550px) {
+    body{
+        overflow-x: hidden;
     }
-    
-    .circle-5 {
-        height: 30rem;
-        width: 60rem;
-    } 
-} */
+    .all-skills{
+        margin: 70px;
+        height: 65vh;
+    }
+    .web,
+    .skill {
+        font-size: 0.8rem;
+        height: 25px;
+    }
+    html[light-mode="dark"] .web,
+    html[light-mode="dark"] .skill{
+        background: white;
+        color: black;
+    }
 
-@media only screen and (min-width:320px) and (max-width:400px) {
+    .web {
+        height: 6rem;
+        width: 7rem;
+    }
+
+    #html,
+    #css,
+    #git {
+        width: 55px;
+    }
+
+    #javascript,
+    #firebase,
+    #tailwind {
+        width: 95px;
+    }
+
+    #react,
+    #redux {
+        width: 80px;
+    }
+
+    #context {
+        width: 110px;
+    }
+    @keyframes moveHTML {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-130px, 0px);
+        }
+    }
+    @keyframes moveCSS {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, -80px);
+        }
+    }
+    @keyframes moveJavaScript {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(140px, 0px);
+        }
+    }
+    @keyframes moveReact {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, 100px);
+        }
+    }
+    @keyframes moveRedux {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(165px, 130px);
+        }
+    }
+    @keyframes moveFirebase {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-165px, -125px);
+        }
+    }
+    @keyframes moveTailwind {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(165px, -125px);
+        }
+    }
+    @keyframes moveContext {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-165px, 130px);
+        }
+    }
+    @keyframes moveGit {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, -160px);
+        }
+    }
+
+    .circle-1 {
+        height: 10rem;
+        width: 11.5rem;
+    }
+
+    .circle-2 {
+        height: 13rem;
+        width: 16rem;
+    }
+
+    .circle-3 {
+        height: 17rem;
+        width: 21rem;
+    }
+
+    .circle-4 {
+        height: 20rem;
+        width: 24.5rem;
+    }
+
+    .circle-5 {
+        height: 24rem;
+        width: 28rem;
+    }
+}
+@media only screen and (max-width:500px) {
+    body{
+        overflow-x: hidden;
+    }
+    .all-skills{
+        margin: 55px;
+        height: 58vh;
+    }
+    .web,
+    .skill {
+        font-size: 0.7rem;
+        height: 25px;
+    }
+    html[light-mode="dark"] .web,
+    html[light-mode="dark"] .skill{
+        background: white;
+        color: black;
+    }
+
+    .web {
+        height: 4.5rem;
+        width: 5.5rem;
+    }
+
+    #html,
+    #css,
+    #git {
+        width: 50px;
+    }
+
+    #javascript,
+    #firebase,
+    #tailwind {
+        width: 85px;
+    }
+
+    #react,
+    #redux {
+        width: 70px;
+    }
+
+    #context {
+        width: 100px;
+    }
+    @keyframes moveHTML {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-100px, 0px);
+        }
+    }
+    @keyframes moveCSS {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, -80px);
+        }
+    }
+    @keyframes moveJavaScript {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(120px, 0px);
+        }
+    }
+    @keyframes moveReact {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, 80px);
+        }
+    }
+    @keyframes moveRedux {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(140px, 100px);
+        }
+    }
+    @keyframes moveFirebase {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-140px, -100px);
+        }
+    }
+    @keyframes moveTailwind {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(140px, -100px);
+        }
+    }
+    @keyframes moveContext {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-140px, 100px);
+        }
+    }
+    @keyframes moveGit {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, -140px);
+        }
+    }
+
+    .circle-1 {
+        height: 7rem;
+        width: 8.5rem;
+    }
+
+    .circle-2 {
+        height: 10rem;
+        width: 12rem;
+    }
+
+    .circle-3 {
+        height: 14rem;
+        width: 17rem;
+    }
+
+    .circle-4 {
+        height: 17rem;
+        width: 20rem;
+    }
+
+    .circle-5 {
+        height: 21rem;
+        width: 23rem;
+    }
+}
+@media only screen and (max-width:450px) {
+    body{
+        overflow-x: hidden;
+    }
+    .all-skills{
+        margin: 50px;
+        height: 55vh;
+    }
+    .web,
+    .skill {
+        font-size: 0.65rem;
+        height: 23px;
+    }
+    html[light-mode="dark"] .web,
+    html[light-mode="dark"] .skill{
+        background: white;
+        color: black;
+    }
+
+    .web {
+        height: 4rem;
+        width: 5rem;
+    }
+
+    #html,
+    #css,
+    #git {
+        width: 40px;
+    }
+
+    #javascript,
+    #firebase,
+    #tailwind {
+        width: 75px;
+    }
+
+    #react,
+    #redux {
+        width: 60px;
+    }
+
+    #context {
+        width: 90px;
+    }
+    @keyframes moveHTML {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-90px, 0px);
+        }
+    }
+    @keyframes moveCSS {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, -75px);
+        }
+    }
+    @keyframes moveJavaScript {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(110px, 0px);
+        }
+    }
+    @keyframes moveReact {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, 70px);
+        }
+    }
+    @keyframes moveRedux {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(130px, 95px);
+        }
+    }
+    @keyframes moveFirebase {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-130px, -95px);
+        }
+    }
+    @keyframes moveTailwind {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(130px, -95px);
+        }
+    }
+    @keyframes moveContext {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(-130px, 95px);
+        }
+    }
+    @keyframes moveGit {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, -130px);
+        }
+    }
+
+    .circle-1 {
+        height: 6rem;
+        width: 7.5rem;
+    }
+
+    .circle-2 {
+        height: 9rem;
+        width: 11rem;
+    }
+
+    .circle-3 {
+        height: 13rem;
+        width: 16rem;
+    }
+
+    .circle-4 {
+        height: 16rem;
+        width: 19rem;
+    }
+
+    .circle-5 {
+        height: 20rem;
+        width: 22rem;
+    }
+}
+@media only screen and (max-width:400px) {
+    body{
+        overflow-x: hidden;
+    }
     .all-skills{
         margin: 40px;
         height: 55vh;
