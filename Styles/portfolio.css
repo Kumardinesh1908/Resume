@@ -116,17 +116,6 @@ html[light-mode="dark"] .portfolio-details ul {
         width: 65%;
     }
 }
-
-/* @media only screen and (max-width:880px) {
-    .portfolio-image {
-        width: 36%;
-    }
-
-    .portfolio-details {
-        width: 63%;
-    }
-} */
-
 @media only screen and (max-width:900px) {
     body{
         overflow-x: hidden;

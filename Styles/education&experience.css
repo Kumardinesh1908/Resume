@@ -26,7 +26,6 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    /* border: 1px solid red; */
 }
 
 .experience-img {
@@ -47,7 +46,6 @@ body {
 
 .quote {
     width: 40%;
-    /* border: 1px solid red; */
 }
 
 .education_head {
@@ -725,10 +723,6 @@ html[light-mode="dark"] .description {
         width: 90%;
     }
 
-    .main-heading {
-        margin-top: 100px;
-    }
-
     .main-heading .head {
         letter-spacing: 1;
         font-size: 1.8rem;
@@ -824,6 +818,9 @@ html[light-mode="dark"] .description {
     body {
         overflow-x: hidden;
     }
+    #education{
+        margin-top:75px ;
+    }
 
     h4::after,
     .nirmal::after,
@@ -890,7 +887,6 @@ html[light-mode="dark"] .description {
     body {
         overflow-x: hidden;
     }
-
     h4::after,
     .nirmal::after,
     .front-end::after {
