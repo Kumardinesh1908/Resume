@@ -292,7 +292,32 @@ html[light-mode="dark"] .third {
 @media only screen and (max-width:991px){
   .dark_toggler{
     position: relative;
-    left: 45%;
+    left: 44%;
+  }
+}
+@media only screen and (max-width:860px){
+  .dark_toggler{
+    left: 42.5%;
+  }
+}
+@media only screen and (max-width:660px){
+  .dark_toggler{
+    left: 41.5%;
+  }
+}
+@media only screen and (max-width:560px){
+  .dark_toggler{
+    left: 40%;
+  }
+}
+@media only screen and (max-width:500px){
+  .dark_toggler{
+    left: 38%;
+  }
+}
+@media only screen and (max-width:440px){
+  .dark_toggler{
+    left: 36%;
   }
 }
 
