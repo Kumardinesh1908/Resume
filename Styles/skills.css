@@ -240,7 +240,8 @@
 
 @media only screen and (min-width:320px) and (max-width:400px) {
     .all-skills{
-        margin-top: -20px;
+        margin: 50px;
+        height: 65vh;
     }
     .web,
     .skill {
