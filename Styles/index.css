@@ -32,8 +32,14 @@ body {
     font-family: "Poppins";
 }
 
-#home {
+#home{
     height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+#particles-js {
+    height: 100vh;
+    min-height: 750px;
     width: 100%;
     overflow: hidden;
 }
