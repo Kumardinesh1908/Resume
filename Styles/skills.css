@@ -25,6 +25,12 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+html[light-mode="dark"] .web,
+html[light-mode="dark"] .skill{
+    background: white;
+    color: black;
+}
+
 .web {
     height: 5rem;
     width: 6rem;
