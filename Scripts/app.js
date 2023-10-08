@@ -34,7 +34,7 @@ let header = $(`<nav class="navbar navbar-expand-lg fixed-top dark-theme" id="na
                         <li class="nav-item active nav-item-hover"><a class="nav-link" href="experience.html">Experience</a></li>
                         <li class="nav-item nav-item-hover"><a class="nav-link" href="education.html">Education</a></li>
                         <li class="nav-item nav-item-hover"><a class="nav-link" href="#contact">Contact</a></li>
-                        <li class="nav-item nav-item-hover"><a class="nav-link" href="/Assests/DineshResume.pdf" download="Dinesh Resume">Resume</a></li>
+                        <li class="nav-item nav-item-hover"><a class="nav-link" href="/Assests/Dinesh Resume.pdf" download="Dinesh Resume">Resume</a></li>
                         <li class="nav-item">
                             <input type="checkbox" id="dark_toggler" class="dark_toggler" aria-label="Toggle Light Mode"
                                 onclick="toggle_light_mode()">
