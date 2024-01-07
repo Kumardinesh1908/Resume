@@ -31,50 +31,11 @@ SCROLLBAR
   background: #ca9eff;
 }
 
-/*CSS variable declaration for light/dark theme*/
-
-html[data-theme="light"] {
-  --bg-mybtn: red;
-  --bg-nav: black;
-  --bg-nav-img: black;
-  --bg-footer: #DDE1EC;
-  --bg: #ffffff;
-  --text: #191919;
-  --text-color: #6c757d;
-  --col-icon: black;
-  --col-bd-radius: rgb(2, 2, 2);
-  --col-box-shadow: #000000 2px 2px 4px, #4D4D4D -2px -2px 4px;
-  --col-box-shadow-hover: inset #8a7373 2px 2px 4px, inset #4D4D4D -2px -2px 4px;
-  --col-bd-icon: transparent;
-  --bg-icon: #fff;
-  --col-icon-twitter: #1da1f2;
-  --col-icon-linkedin: #0e76a8;
-  --col-icon-github: #24292e;
-  --col-icon-instagram: rgb(201, 94, 174);
-  --shadow-col: rgba(0, 0, 0, 0.3);
-}
-
-html[data-theme="dark"] {
-  --bg-mybtn: rgb(230, 109, 129);
-  --bg-nav: #6617cb;
-  --bg-nav-img: linear-gradient(315deg, #6617cb 0%, #882463 74%);
-  --bg-footer: linear-gradient(315deg, #6617cb 0%, #882463 74%);
-  --bg: #191919;
-  --text: #ffffff;
-  --text-color: #fff;
-  --bg-txt-img: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
-  --txt-fill: transparent;
-  --col-icon: white;
-  --col-bd-radius: black;
-  --col-bd-icon: transparent;
-  --col-box-shadow: 5px 5px 10px rgba(22, 21, 21, 0.7), -5px -5px 10px rgba(255, 255, 255, 0.1);
-  --col-box-shadow-hover: inset rgba(255, 255, 255, 1) 2px 2px 4px, inset rgba(255, 255, 255, 0.5) -2px -2px 4px;
-  --col-icon-twitter: #1da1f2;
-  --col-icon-linkedin: #0e76a8;
-  --col-icon-github: #24292e;
-  --col-icon-instagram: rgb(201, 94, 174);
-  --col-white: #fff;
-}
+/*
+---------------------------
+HTML
+---------------------------
+*/
 
 html {
   background-color: #f6f6f6;
@@ -87,10 +48,15 @@ html[light-mode="dark"] {
   color: #ced4e2;
 }
 
-/* body */
+/*
+---------------------------
+BODY
+---------------------------
+*/
+
 body {
   height: 100vh;
-  margin: 0;
+  margin-top: -2px;
   overflow-x: hidden;
   color: var(--text);
   font-family: "Poppins", sans-serif;
@@ -112,7 +78,7 @@ Navbar CSS
 }
 
 /* Navbar on darkMode */
-html[light-mode="dark"] .dark-theme {
+html[light-mode="dark"] .navbar {
   background-color: #2b2a2A;
   transition: background-color .3s;
   box-shadow: 0 0 0;
@@ -126,7 +92,7 @@ html[light-mode="dark"] .dark-theme {
 }
 
 .navbar-brand:hover {
-  color: #000000 !important;
+  color: #000000;
 }
 
 /* Navbar Title for dark mode */
@@ -135,7 +101,7 @@ html[light-mode="dark"] .navbar-brand {
 }
 
 html[light-mode="dark"] .navbar-brand:hover {
-  color: #ffffff !important;
+  color: #ffffff;
 }
 
 /* nav link for light mode */
@@ -198,7 +164,11 @@ html[light-mode="dark"] .nav-link:hover {
   }
 }
 
-/*  HAMBURGER ANIMATION */
+/*
+---------------------------
+HAMBURGER ANIMATION
+---------------------------
+*/
 
 .hamburger {
   width: 2.5em;
@@ -253,8 +223,13 @@ html[light-mode="dark"] .third {
   transform: rotate(-45deg) translate(-0.167em, 0.083em);
 }
 
-/* Theme toggle switch button */
-.dark_toggler {
+/*
+---------------------------
+Theme toggle switch button
+---------------------------
+*/
+
+#dark_toggler {
   -webkit-appearance: none;
   position: relative;
   cursor: pointer;
@@ -266,12 +241,14 @@ html[light-mode="dark"] .third {
   transition: background-image 0.9s;
   box-shadow: 0px 2px 5px 1px gray;
 }
-.dark_toggler:checked {
+
+#dark_toggler:checked {
   background-image: url(/images/dark\ mode\ button\ image.png);
   transition: background-image 0.9s;
   box-shadow: 0px 2px 5px 1px rgb(187, 134, 201);
 }
-.dark_toggler:before {
+
+#dark_toggler:before {
   content: "";
   position: absolute;
   top: 0;
@@ -283,40 +260,46 @@ html[light-mode="dark"] .third {
   transition: all 0.9s;
   background-color: #f7ca33;
 }
-.dark_toggler:checked:before {
+
+#dark_toggler:checked:before {
   transform: translate(150%);
   transition: all 0.9s;
   background-color: #bb86fc;
 }
 
-@media only screen and (max-width:991px){
-  .dark_toggler{
+@media only screen and (max-width:991px) {
+  #dark_toggler {
     position: relative;
     left: 44%;
   }
 }
-@media only screen and (max-width:860px){
-  .dark_toggler{
+
+@media only screen and (max-width:860px) {
+  #dark_toggler {
     left: 42.5%;
   }
 }
-@media only screen and (max-width:660px){
-  .dark_toggler{
+
+@media only screen and (max-width:660px) {
+  #dark_toggler {
     left: 41.5%;
   }
 }
-@media only screen and (max-width:560px){
-  .dark_toggler{
+
+@media only screen and (max-width:560px) {
+  #dark_toggler {
     left: 40%;
   }
 }
-@media only screen and (max-width:500px){
-  .dark_toggler{
+
+@media only screen and (max-width:500px) {
+  #dark_toggler {
     left: 38%;
   }
 }
-@media only screen and (max-width:440px){
-  .dark_toggler{
+
+@media only screen and (max-width:440px) {
+  #dark_toggler {
     left: 36%;
   }
 }
@@ -418,6 +401,7 @@ Contact Form CSS
   color: #bb86fc;
 }
 
+
 #contact-form-status {
   margin-top: 30px;
   font-size: 1.2rem;
@@ -490,13 +474,6 @@ Social icons CSS
 ---------------------
 */
 
-:root {
-  --link-size: 64px;
-  --trans-props: all 0.2s ease;
-  --link-size-footer-b: 40px;
-  --link-size-footer-s: 30px;
-}
-
 .social-icons {
   display: flex;
   font-size: 20px;
@@ -506,13 +483,13 @@ Social icons CSS
 
 .socialicon {
   display: flex;
-  width: var(--link-size);
-  height: var(--link-size);
+  width: 64px;
+  height: 64px;
   background-color: #fff;
   margin: 8px;
   border-radius: 50%;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
-  transition: var(--trans-props);
+  transition: all 0.2s ease;
 }
 
 .socialicon:hover {
@@ -696,24 +673,9 @@ html[light-mode="dark"] .github-icon {
   bottom: 10px;
   right: 10px;
   animation: up 1.5s infinite;
-  -webkit-animation: up 1.5s infinite;
 }
 
 @keyframes up {
-  0% {
-    transform: translate(0);
-  }
-
-  20% {
-    transform: translateY(-15px);
-  }
-
-  40% {
-    transform: translate(0);
-  }
-}
-
-@-webkit-keyframes up {
   0% {
     transform: translate(0);
   }

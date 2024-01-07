@@ -1,19 +1,20 @@
-// Function to remove preload after load
+// Function to remove preloader after load
 let loader = document.querySelector(".loader-container");
+let noScrollPreload = document.querySelector(".no-scroll-preload");
 
-window.addEventListener("load", () => {
-    loader.classList.add("disappear");
-});
+
 window.addEventListener("load", () => {
     setTimeout(function () {
-        $(".no-scroll-preload").css("overflow", "visible");
+        loader.style.display = "none";
+        noScrollPreload.style.overflow = "visible";
     }, 1000);
-    $(".loader-container").fadeOut(2500);
-})
+});
 
 // Navbar
-let header = $(`<nav class="navbar navbar-expand-lg fixed-top dark-theme" id="navbar">
+let header = `<nav class="navbar navbar-expand-lg fixed-top dark-theme" id="navbar">
+
                 <a class="navbar-brand" href="index.html">Dinesh Kumar </a>
+                
                 <div class="hamburger_wrapper navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -28,24 +29,24 @@ let header = $(`<nav class="navbar navbar-expand-lg fixed-top dark-theme" id="na
 
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto" id="navbar-content">
-                        <li class="nav-item active nav-item-hover"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item active nav-item-hover"><a class="nav-link" href="skills.html">Skills</a></li>
+                        <li class="nav-item nav-item-hover"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item nav-item-hover"><a class="nav-link" href="skills.html">Skills</a></li>
                         <li class="nav-item nav-item-hover"><a class="nav-link" href="projects.html">Projects</a></li>
-                        <li class="nav-item active nav-item-hover"><a class="nav-link" href="experience.html">Experience</a></li>
+                        <li class="nav-item nav-item-hover"><a class="nav-link" href="experience.html">Experience</a></li>
                         <li class="nav-item nav-item-hover"><a class="nav-link" href="education.html">Education</a></li>
                         <li class="nav-item nav-item-hover"><a class="nav-link" href="#contact">Contact</a></li>
                         <li class="nav-item nav-item-hover"><a class="nav-link" href="/Assests/Dinesh Resume.pdf" download="Dinesh Resume">Resume</a></li>
                         <li class="nav-item">
-                            <input type="checkbox" id="dark_toggler" class="dark_toggler" aria-label="Toggle Light Mode"
+                            <input type="checkbox" id="dark_toggler" aria-label="Toggle Light Mode"
                                 onclick="toggle_light_mode()">
                         </li>
                     </ul>
                 </div>
                 </nav>
-`);
+`;
 
 // Footer
-let footer = $(`<footer id="contact">
+let footer = `<footer id="contact">
                       <div class="quote-container">
                           <div class="quotes" style="text-align:center;">
                               <!--SVG code for quote-left icon-->
@@ -97,7 +98,7 @@ let footer = $(`<footer id="contact">
                                   </div>
                                   <div class="my-details-info-container">
                                       <i class="fas fa-mobile-alt"></i>
-                                      <span>9980802603</span>
+                                      <span>+91-9980802603</span>
                                   </div>
                                   <div class="my-details-info-container">
                                       <i class="far fa-envelope"></i>
@@ -199,21 +200,18 @@ let footer = $(`<footer id="contact">
                           </a>
                       </div>
                   </footer>
-`);
+`;
 
-// upArrow Button
-let upArrow = $(`<button id="btnScrollToTop" onclick="scrollToTop()">
-                <i class="fas fa-2x fa-angle-up"></i>
-                </button>
-`);
+const upArrow = document.createElement("button");
+upArrow.id = "btnScrollToTop";
+upArrow.innerHTML = `<i class="fas fa-2x fa-angle-up"></i>`;
 
-// Window Loads
-$(function () {
-    let bodyElement = $(`body`);
-    bodyElement.prepend(header);
-    bodyElement.append(footer);
-    bodyElement.append(upArrow);
-    $("#btnScrollToTop").css("visibility", "hidden");
+window.addEventListener("load", () => {
+    document.body.insertAdjacentHTML("afterbegin", header);
+    document.body.insertAdjacentHTML("beforeend", footer);
+    document.body.appendChild(upArrow);
+    document.getElementById('btnScrollToTop').style.visibility = "hidden";
+    document.getElementById("btnScrollToTop").addEventListener('click', scrollToTop);
 });
 
 //function to scroll to top
@@ -225,18 +223,18 @@ const scrollToTop = () => {
     });
 };
 
-//function for the "Scroll To Top" button to detect the footer
-$(window).scroll(function () {
-    //The button will be hidden until we scroll more than the window's height
-    if ($(window).scrollTop() < $(window).height()) {
-        $("#btnScrollToTop").css("visibility", "hidden");
+// Add a scroll event listener to the window
+window.addEventListener("scroll", function () {
+    if (window.scrollY < window.innerHeight) {
+        document.getElementById("btnScrollToTop").style.visibility = "hidden";
     } else {
-        $("#btnScrollToTop").css("visibility", "visible");
+        document.getElementById("btnScrollToTop").style.visibility = "visible";
     }
 });
 
+const htmlElement = document.querySelector('html');
+
 // function to toggle the light Theme
-const htmlElement = document.documentElement;
 function toggle_light_mode() {
     const dark_toggler = document.getElementById('dark_toggler');
     if (dark_toggler.checked) {
@@ -249,9 +247,8 @@ function toggle_light_mode() {
 }
 
 // Function to consistant the light/dark theme on all pages of website
-$(document).ready(function () {
+window.addEventListener("load", () => {
     const initialLightMode = sessionStorage.getItem('lightMode');
-    console.log("initialLightMode")
     if (initialLightMode === 'dark') {
         htmlElement.setAttribute('light-mode', 'dark');
         dark_toggler.checked = true;
@@ -262,42 +259,41 @@ $(document).ready(function () {
 });
 
 // function for toggling hamburger(X-button) is-active class
-$(function () {
-    $("#js-hamburger").on("click", function () {
-        $(this).toggleClass("is-active");
+window.addEventListener("load", () => {
+    var hamburger = document.getElementById("js-hamburger");
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("is-active");
     });
 });
 
 // function to fetch the location href and update the current nav link design
 const currentPath = window.location.pathname;
-$(function () {
-    $("a.nav-link").each(function () {
-        const linkHref = $(this).prop("href");
-        if (linkHref.endsWith(currentPath) || (linkHref.endsWith("#contact") && currentPath === "")) {
-            $(this).addClass("current-link");
+const updateCurrentNavLink = function () {
+    let navLinks = document.querySelectorAll("a.nav-link");
+    navLinks.forEach(function (link) {
+        const linkHref = link.getAttribute("href");
+        if (currentPath.endsWith(linkHref)) {
+            link.classList.add("current-link");
         }
+    });
+}
+window.addEventListener("load", updateCurrentNavLink);
+
+// function to remove underline of navlink on hover
+window.addEventListener("load", function () {
+    let navLinks = document.querySelectorAll("a.nav-link");
+    navLinks.forEach(function (link) {
+        link.addEventListener("mouseenter", function () {
+            link.classList.remove("current-link");
+        });
+        link.addEventListener("mouseleave", function () {
+            updateCurrentNavLink();
+        });
     });
 });
 
-//function to remove underline of navlink on hover
-$(document).ready(function () {
-    $("a.nav-link").hover(
-        // Hover in: Remove the "current-link" class
-        function () {
-            $(this).removeClass("current-link");
-        },
-        // Hover out: Check if the link's href matches the current URL and add the class back if needed
-        function () {
-            const linkHref = $(this).prop("href");
-            if (linkHref.endsWith(currentPath) || (linkHref.endsWith("#contact") && currentPath === "")) {
-                $(this).addClass("current-link");
-            }
-        }
-    );
-});
-
 // Contact-Form.js
-$(document).ready(function () {
+window.addEventListener("load", function () {
     var form = document.getElementById("contact-form");
     async function handleSubmit(event) {
         event.preventDefault();
